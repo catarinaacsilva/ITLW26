@@ -1,89 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Meu Portefólio</title>
 </head>
+
 <body>
     <header>
         <h1>Kauã Silva</h1>
-    <nav>
+        <nav>
             <ul>
-                <li><a href="#sobre">Sobre</a></li> 
-                <li>Hórario</li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li>Horário</li>
                 <li>Contacto</li>
-                <li><a href = "https://www.ua.pt" target="_blank"> UA</a></li>
+                <li><a href="https://www.ua.pt/" target="_blank">Portal UA</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <main>
+        <section id="introducao">
+            <h2>Introdução ao Projeto</h2>
+            <p>O <strong>BeatShare</strong> é uma plataforma online criada para <strong>produtores musicais</strong>
+                compartilharem <strong><em>beats</em></strong>, <strong><em>samples</em></strong> e projetos em
+                andamento com outros <strong>artistas.</strong> Os usuários podem publicar suas criações, receber
+                <strong><em>feedback</em></strong> da comunidade e colaborar em novas <strong>músicas</strong> de forma
+                simples e organizada.
+            </p>
+            <p>Com foco na <strong>criatividade</strong> e na <strong>conexão</strong> entre talentos, o
+                <strong>BeatShare</strong> facilita <strong>parcerias</strong>, amplia a <strong>visibilidade</strong>
+                dos <strong>produtores</strong> e incentiva a troca de experiências dentro do universo da <strong>música
+                    digital</strong>.
+            </p>
+            <blockquote>
+                <p>"O sucesso é ir de fracasso em fracasso sem perder o entusiasmo."</p>
+            </blockquote>
+            <p>- Winston Churchill</p>
+            <figure>
+                <img src="beatshare.png" alt="Foto BeatShare V0.1">
+                <figcaption>Imagem ilustrativa da pagina inicial do BeatShare</figcaption>
+            </figure>
+            <hr>
+        </section>
 
-    <section id="introducao">
-        <h2>Introdução ao Projeto</h2>
+        <section id="dados-informacao">
+            <h2>Tabela de Informações</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Coluna 1</th>
+                        <th>Coluna 2</th>
+                        <th>Coluna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dado 1</td>
+                        <td>Dado 2</td>
+                        <td>Dado 3</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dado 1-2</strong></td>
+                        <td><strong>Dado 2-2</strong></td>
+                        <td><strong>Dado 3-3</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <p>
-            A <strong>Inteligência Artificial</strong> constitui uma das áreas mais 
-            relevantes da <strong>tecnologia contemporânea</strong>, permitindo que 
-            sistemas informáticos executem tarefas que tradicionalmente requerem 
-            <em>inteligência humana</em>. Através de metodologias como a 
-            <strong>aprendizagem automática</strong> e as 
-            <strong>redes neuronais</strong>, é possível desenvolver soluções capazes 
-            de analisar grandes volumes de dados, reconhecer padrões e apoiar a 
-            tomada de decisão. O conceito de <em>machine learning</em> assume, assim, 
-            um papel central na evolução tecnológica actual.
-        </p>
+        <section id="recursos">
+            <h2>Recursos</h2>
+            <ol>
+                <li>Tst</li>
+                <ul>
+                    <li>tst1.1</li>
+                    <li>tst1.2</li>
+                </ul>
+                <li>Tst2</li>
+            </ol>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YuGwUf2p9A8?si=fqsxyGScY7EG4h2R"
+                title="Sugestão do Matheus Rodrigues" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
 
-        <blockquote cite="https://www.ibm.com/topics/artificial-intelligence">
-            “A Inteligência Artificial é a capacidade de um sistema computacional 
-            imitar funções cognitivas humanas, como a aprendizagem e a resolução de problemas.”
-        </blockquote>
+        <section id="contacto">
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
 
-        <figure>
-            <img src="imagens/inteligencia-artificial.jpg" 
-                 alt="Representação de um cérebro digital a simbolizar a Inteligência Artificial">
-            <figcaption>
-                Representação conceptual de um sistema de Inteligência Artificial baseado em redes neuronais.
-            </figcaption>
-        </figure>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
 
-    </section>
-
-    <hr>
-        <section>
-            <id="dados-informacao">
-                <h2>Tabela de Informações</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Coluna 1</th>
-                            <th>Coluna 2</th>
-                            <th>Coluna 3</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Dado 1</td>
-                            <td>Dado 2</td>
-                            <td>Dado 3</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Total 1</strong></td>
-                            <td><strong>Total 2</strong></td>
-                            <td><strong>Total 3</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </id>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
+    <footer>
+        <h5>© 2026 - Desenvolvido no âmbito da UC</h5>
+    </footer>
 </body>
+
 </html>
-    
-
-</main>
-    </main>
-</body>
-
-
